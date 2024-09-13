@@ -90,6 +90,4 @@ These insights can help the mall tailor its marketing strategies to each custome
 
 ---
 
-Feel free to contribute, raise issues, or suggest improvements to this project. 
 
-**Author**: [Your Name]
