@@ -58,6 +58,8 @@ The goal is to identify meaningful customer segments that share similar characte
 
 - **K-Means Clustering**:
   K-means aims to group customers based on the similarity in their demographic and behavioral features. The algorithm minimizes the within-cluster variance and maximizes the between-cluster variance.
+  
+  ![image](https://github.com/user-attachments/assets/cb45717d-df4b-4039-9386-c5980221138c)
 
   Key steps:
   1. Choose the number of clusters (K).
