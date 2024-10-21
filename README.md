@@ -1,28 +1,66 @@
-# Mall Customer Segmentation using K-Means Clustering
+# 🛍️ Customer Segmentation Analysis using K-Means Clustering
 
-This project is a part of the **Mall Customer Segmentation Data** competition held on Kaggle. The main objective is to segment customers into distinct groups based on their purchasing behavior, which can provide valuable insights into customer preferences and help the company in tailoring marketing strategies and increasing revenue.
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 
-## Overview
+This project is part of the **Mall Customer Segmentation Data** competition held on Kaggle. The goal is to use K-Means clustering to segment customers into distinct groups based on their purchasing behavior, helping to derive insights that can boost revenue by designing effective marketing strategies.
 
-Customer segmentation is a powerful approach for understanding customer heterogeneity. One of the widely used techniques for segmentation is **K-means clustering**, an unsupervised learning algorithm that partitions data into non-overlapping groups or clusters. This project applies K-means clustering to the customer data provided in the competition to discover distinct customer segments.
+## 📊 Project Overview
 
-The results of the segmentation can help companies:
-- Understand the diverse needs and preferences of different customer groups.
-- Design targeted marketing strategies.
-- Improve customer satisfaction and retention.
-- Enhance overall revenue by focusing on high-value customer segments.
+Customer segmentation allows businesses to divide their customer base into distinct groups based on specific traits such as buying behavior. This project utilizes **K-Means Clustering**, an unsupervised learning algorithm, to segment customers into meaningful groups, enabling the company to tailor its marketing strategies.
 
-## Table of Contents
+The project covers:
+- **Data Cleaning & Preprocessing**
+- **Exploratory Data Analysis (EDA)**
+- **K-Means Clustering Implementation**
+- **Cluster Analysis & Visualization**
 
-- [Dataset](#dataset)
-- [Project Workflow](#project-workflow)
-- [Modeling Approach](#modeling-approach)
-- [Results](#results)
-- [Technologies Used](#technologies-used)
-- [References](#references)
+## 🚀 Features
+- **Data Preprocessing**: Cleaning the dataset and scaling features.
+- **Clustering Analysis**: Apply K-means clustering and determine optimal clusters using the Elbow method and Silhouette Score.
+- **Visualizations**: 3D and 2D interactive visualizations for customer clusters.
+- **Insights**: Actionable insights on customer segments for targeted marketing.
+
+## 📁 Dataset
+
+The dataset contains information about:
+- **Customer ID**: Unique identifier for each customer.
+- **Gender**: Gender of the customer.
+- **Age**: Age of the customer.
+- **Annual Income**: Annual income of the customer in thousands of dollars.
+- **Spending Score**: A score between 1-100 assigned by the mall based on customer spending behavior.
+
+## 📊 Workflow
+
+### 1. **Data Preprocessing**
+- **Handling Missing Data**: Checked for missing or incorrect data.
+- **Feature Scaling**: Applied standardization to normalize features like income and spending score.
+
+### 2. **Exploratory Data Analysis (EDA)**
+- Visualized distributions of age, income, and spending.
+- Analyzed correlations between features.
+  
+### 3. **K-Means Clustering**
+- **Elbow Method** and **Silhouette Score** were used to determine the optimal number of clusters.
+- Applied K-Means to form customer clusters.
+
+### 4. **Cluster Analysis**
+- Visualized customer clusters using 2D and 3D scatter plots.
+- Derived insights based on cluster characteristics for business strategies.
+
+### 5. **Model Evaluation**
+- Used the **silhouette score** to evaluate the quality of clustering.
+- Provided recommendations based on the insights from each cluster.
+
+## 📦 Installation and Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/customer-segmentation-analysis.git
+   cd customer-segmentation-analysis
 
 ## Dataset
-
 The dataset contains customer information, including:
 - **Customer ID**: A unique ID for each customer.
 - **Gender**: Gender of the customer.
@@ -54,20 +92,20 @@ The goal is to identify meaningful customer segments that share similar characte
    - Evaluate the clusters formed using the silhouette score.
    - Interpret the results and suggest business strategies based on customer segments.
 
-## Modeling Approach
+   
+## 🧪 Modeling Approach
+**K-Means Clustering Algorithm**
+- K-Means is used to segment customers into clusters by minimizing the distance between each customer and their assigned cluster center.
 
-- **K-Means Clustering**:
-  K-means aims to group customers based on the similarity in their demographic and behavioral features. The algorithm minimizes the within-cluster variance and maximizes the between-cluster variance.
+  **Steps involved:**
+  1. Select the number of clusters 𝐾.
+  2. Assign each customer to the nearest cluster center.
+  3. Recompute the centers of each cluster until convergence.
+  4. K-means aims to group customers based on the similarity in their demographic and behavioral features. The algorithm minimizes the within-cluster variance and maximizes the between-cluster variance.
   
   ![image](https://github.com/user-attachments/assets/cb45717d-df4b-4039-9386-c5980221138c)
 
-  Key steps:
-  1. Choose the number of clusters (K).
-  2. Assign each customer to the nearest cluster center.
-  3. Recalculate the cluster centroids until convergence.
-
-
-## Results
+## 📊 Results
 
 The optimal number of customer segments was found to be `K = X` using the Elbow Method and Silhouette Score. The characteristics of each customer segment were as follows:
 - **Cluster 1**: (Description of the segment, such as high-income, low-spending customers).
@@ -87,30 +125,20 @@ The optimal number of customer segments was found to be `K = X` using the Elbow 
 - **Scikit-learn**: For implementing K-means clustering.
 - **Jupyter Notebook**: For developing and presenting the project.
 
-## Clustering on 3D data
+## 📈 Clustering on 3D Data
+- After clustering the data, the following customer counts were obtained for each cluster:
+  1. Cluster 1: 24 customers [129, 131, 135, ...]
+  2. Cluster 2: 29 customers [47, 51, 55, ...]
+  3. Cluster 3: 28 customers [124, 126, 128, ...]
+  4. Cluster 4: 22 customers [2, 4, 6, ...]
+  5. Cluster 5: 12 customers [3, 7, 9, ...]
 
-- **Number of customer in 1st group = 24**
-- They are = [129 131 135 137 139 141 145 147 149 151 153 155 157 159 161 163 165 167 169 171 173 175 177 179]
+- 
+   <img src="https://github.com/user-attachments/assets/e865d1fc-91ad-4365-b360-a076970accc6" alt="image 22" width="500">
+   <img src="https://github.com/user-attachments/assets/d2603252-ec8c-4982-9d9f-72108ce0ffbe" alt="image 23" width="800">
 
-  
-- **Number of customer in 2nd group = 29**
-- They are = [ 47  51  55  56  57  60  67  72  77  78  80  82  84  86  90  93  94  97 99 102 105 108 113 118 119 120 122 123 127]
-
-  
-- **Number of customer in 3rd group = 28**
-- They are = [124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164 166 168 170 172 174 176 178]
-
-  
-- **Number of customer in 4th group = 22**
-- They are = [ 2  4  6  8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 46]
-
-  
-- **Number of customer in 5th group = 12**
-- They are = [ 3  7  9 11 13 15 23 25 31 33 35 37]
-
-![image](https://github.com/user-attachments/assets/e865d1fc-91ad-4365-b360-a076970accc6)
-
-![image](https://github.com/user-attachments/assets/d2603252-ec8c-4982-9d9f-72108ce0ffbe)
+## 🤝 Contributions
+**Contributions are welcome! Feel free to open an issue or submit a pull request with improvements or suggestions.**
 
 
 
