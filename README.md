@@ -71,7 +71,10 @@ The goal is to identify meaningful customer segments that share similar characte
 The optimal number of customer segments was found to be `K = X` using the Elbow Method and Silhouette Score. The characteristics of each customer segment were as follows:
 - **Cluster 1**: (Description of the segment, such as high-income, low-spending customers).
 - **Cluster 2**: (Description of another segment).
-- ...
+- ![image](https://github.com/user-attachments/assets/04bbc386-5a46-468c-bd8c-d4a8596630b9)
+- ![image](https://github.com/user-attachments/assets/1f1c1c95-6285-4771-9e64-26e07006f728)
+
+
 
 These insights can help the mall tailor its marketing strategies to each customer segment, enhancing customer satisfaction and increasing revenue.
 
