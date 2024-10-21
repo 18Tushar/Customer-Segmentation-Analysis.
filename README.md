@@ -66,7 +66,6 @@ The goal is to identify meaningful customer segments that share similar characte
   2. Assign each customer to the nearest cluster center.
   3. Recalculate the cluster centroids until convergence.
 
-  For more details on the algorithm, refer to the [Wikipedia article](https://en.wikipedia.org/wiki/K-means_clustering).
 
 ## Results
 
@@ -86,11 +85,30 @@ The optimal number of customer segments was found to be `K = X` using the Elbow 
 - **Scikit-learn**: For implementing K-means clustering.
 - **Jupyter Notebook**: For developing and presenting the project.
 
-## References
+## Clustering on 3D data
 
-- [K-means Clustering on Wikipedia](https://en.wikipedia.org/wiki/K-means_clustering)
-- [Scikit-learn K-means Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+- **Number of customer in 1st group = 24**
+- They are = [129 131 135 137 139 141 145 147 149 151 153 155 157 159 161 163 165 167 169 171 173 175 177 179]
 
----
+  
+- **Number of customer in 2nd group = 29**
+- They are = [ 47  51  55  56  57  60  67  72  77  78  80  82  84  86  90  93  94  97 99 102 105 108 113 118 119 120 122 123 127]
+
+  
+- **Number of customer in 3rd group = 28**
+- They are = [124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164 166 168 170 172 174 176 178]
+
+  
+- **Number of customer in 4th group = 22**
+- They are = [ 2  4  6  8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 46]
+
+  
+- **Number of customer in 5th group = 12**
+- They are = [ 3  7  9 11 13 15 23 25 31 33 35 37]
+
+![image](https://github.com/user-attachments/assets/e865d1fc-91ad-4365-b360-a076970accc6)
+
+![image](https://github.com/user-attachments/assets/d2603252-ec8c-4982-9d9f-72108ce0ffbe)
+
 
 
